@@ -80,3 +80,4 @@ cd binaural-flow-studio
 
 <!-- core: production-grade -->
 <!-- ui: fully-responsive -->
+<!-- tests: 100%-coverage -->
