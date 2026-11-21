@@ -79,3 +79,4 @@ cd binaural-flow-studio
 - **GitHub**: [@pushpikaodisha](https://github.com/pushpikaodisha)
 
 <!-- core: production-grade -->
+<!-- ui: fully-responsive -->
