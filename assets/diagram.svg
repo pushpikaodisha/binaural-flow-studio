@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0A10"/>
+      <stop offset="100%" stop-color="#2B141E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="480" rx="16" fill="url(#bg)"/>
+  
+  <text x="550" y="38" fill="#FA709A" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">BINAURAL FLOW STUDIO ACOUSTIC SYNTHESIS &amp; CYMATICS ENGINE</text>
+  <text x="550" y="60" fill="#64748B" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Web Audio Dual FM Oscillators → HRTF 3D Panner → Chladni Wave Solver → Particle Plate Physics</text>
+
+  <!-- Section 1: Web Audio Synthesis Graph -->
+  <g transform="translate(50, 95)">
+    <rect width="320" height="250" rx="10" fill="#2E111E" stroke="#FA709A" stroke-width="1.5"/>
+    <text x="160" y="28" fill="#FA709A" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">WEB AUDIO GRAPH</text>
+    
+    <rect x="20" y="50" width="130" height="35" rx="6" fill="#3D1728"/>
+    <text x="85" y="72" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Oscillator L (f0)</text>
+
+    <rect x="170" y="50" width="130" height="35" rx="6" fill="#3D1728"/>
+    <text x="235" y="72" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Oscillator R (f0+Δf)</text>
+
+    <rect x="20" y="100" width="280" height="35" rx="6" fill="#4D1D33"/>
+    <text x="160" y="122" fill="#FEE140" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Binaural Beat: |f_L - f_R| (0.5 - 50 Hz)</text>
+
+    <rect x="20" y="150" width="280" height="35" rx="6" fill="#3D1728"/>
+    <text x="160" y="172" fill="#FA709A" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">HRTF 3D Spatial Panner (Orbit Mode)</text>
+
+    <rect x="20" y="195" width="280" height="35" rx="6" fill="#10B981" opacity="0.2"/>
+    <text x="160" y="217" fill="#10B981" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">In-Browser 16-bit WAV PCM Encoder</text>
+  </g>
+
+  <path d="M 380 220 L 430 220" stroke="#FA709A" stroke-width="2.5"/>
+  <polygon points="435,220 425,215 425,225" fill="#FA709A"/>
+
+  <!-- Section 2: Chladni Mathematical Solver -->
+  <g transform="translate(440, 95)">
+    <rect width="300" height="250" rx="10" fill="#2E111E" stroke="#FEE140" stroke-width="1.5"/>
+    <text x="150" y="28" fill="#FEE140" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">CHLADNI CYMATICS SOLVER</text>
+    
+    <rect x="15" y="55" width="270" height="60" rx="6" fill="#3D1728"/>
+    <text x="150" y="80" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">2D Wave Differential Equation:</text>
+    <text x="150" y="100" fill="#FEE140" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle">w(x,y) = cos(nπx/L)cos(mπy/L) - ...</text>
+
+    <rect x="15" y="130" width="270" height="95" rx="6" fill="#3D1728"/>
+    <text x="150" y="155" fill="#FA709A" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Nodal Lines Formulation:</text>
+    <text x="150" y="180" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Surface Acceleration: |∇²w|</text>
+    <text x="150" y="205" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Particles scatter to w(x,y) = 0</text>
+  </g>
+
+  <path d="M 750 220 L 800 220" stroke="#FEE140" stroke-width="2.5"/>
+  <polygon points="805,220 795,215 795,225" fill="#FEE140"/>
+
+  <!-- Section 3: Sand Particle Plate -->
+  <g transform="translate(810, 95)">
+    <rect width="240" height="250" rx="10" fill="#2E111E" stroke="#FA709A" stroke-width="1.5"/>
+    <text x="120" y="28" fill="#FA709A" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">PARTICLE SAND PLATE</text>
+    
+    <rect x="20" y="55" width="200" height="175" rx="8" fill="#1A0A10" stroke="#3D1728"/>
+    <circle cx="120" cy="142" r="60" fill="none" stroke="#FEE140" stroke-width="2" stroke-dasharray="6,4"/>
+    <circle cx="120" cy="142" r="30" fill="none" stroke="#FA709A" stroke-width="2"/>
+    <line x1="60" y1="142" x2="180" y2="142" stroke="#FEE140" stroke-width="1.5"/>
+    <line x1="120" y1="82" x2="120" y2="202" stroke="#FEE140" stroke-width="1.5"/>
+    <text x="120" y="220" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">2,000+ Kinetic Sand Particles</text>
+  </g>
+
+  <!-- Bottom Description -->
+  <g transform="translate(50, 365)">
+    <rect width="1000" height="85" rx="8" fill="#1F0C15" stroke="#3D1728"/>
+    <text x="30" y="30" fill="#FEE140" font-family="system-ui, sans-serif" font-size="13" font-weight="700">🔬 ACOUSTIC BRAINWAVE ENTRAINMENT &amp; CYMATICS RESONANCE:</text>
+    <text x="30" y="50" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Binaural beats synchronize cerebral oscillations across Delta (sleep), Theta (meditation), Alpha (flow), and Gamma (focus).</text>
+    <text x="30" y="68" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Simultaneously, Ernst Chladni's wave differential equations calculate dynamic nodal geometries on the vibrating square plate.</text>
+  </g>
+</svg>
